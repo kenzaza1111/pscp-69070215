@@ -2,19 +2,26 @@
 
 def main():
     '''hi'''
-    price = float(input())
-    survice = 0
-    if price < 500:
-        survice = 50
-    elif price > 10000:
-        survice = 1000
-    elif price <= 0:
-        price =  0
-    else:
-        survice = price/10
-    all1 = survice + price
-    tax = all1 * 0.07
-    all2 = all1 + tax
-    print(f"{all2:.2f}")
-
+    x = int(input())
+    y = int(input())
+    where = ""
+    if x > 0 and y > 0 :
+        where = "Q1"
+    elif x > 0 and y < 0 :
+        where = "Q4"
+    elif x < 0 and y > 0 :
+        where = "Q2"
+    elif x < 0 and y < 0 :
+        where = "Q3"
+    elif not x and y != 0:
+        where = "Y"
+    elif not y and x != 0:
+        where = "X"
+    elif not x and not y:
+        where = "O"
+    elif (x < 0 and y < 0) and x==y:
+        where = "Q3"
+    elif (x > 0 and y > 0) and x==y:
+        where = "Q1"
+    print(where)
 main()
