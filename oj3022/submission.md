@@ -21,7 +21,7 @@ OJ3022 - Temperature
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-549394
+564529
 ```
 
 สถานะ OJ:
